@@ -3,46 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body class="bg-gray-50 font-sans text-gray-900">
-
-    <nav class="flex justify-end p-6 space-x-6 text-sm font-bold uppercase tracking-widest">
-        <a href="#projects" class="hover:text-blue-600 border-b-2 border-transparent hover:border-blue-600 transition">Projects</a>
-        <a href="#resume" class="hover:text-blue-600 border-b-2 border-transparent hover:border-blue-600 transition">Resume</a>
-        <a href="#contact" class="hover:text-blue-600 border-b-2 border-transparent hover:border-blue-600 transition">Contact</a>
-    </nav>
-
-    <main class="flex flex-col items-center justify-center min-h-[80vh] px-4 text-center">
+    <title>Rameet Singh Sachar - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         
-        <h1 class="text-4xl font-light mb-6 tracking-tight">Rameet Singh Sachar</h1>
-
-        <div class="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-lg mb-8">
-            <img src="https://via.placeholder.com/200" alt="Profile" class="w-full h-full object-cover">
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            max-width: 600px;
+            width: 100%;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        h1 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        
+        .subtitle {
+            color: #666;
+            font-size: 1.1em;
+            margin-bottom: 30px;
+        }
+        
+        .description {
+            color: #555;
+            font-size: 1em;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+        
+        .links {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        
+        a:hover {
+            background: #764ba2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Rameet Singh Sachar</h1>
+        <p class="subtitle">Welcome to My Portfolio</p>
+        <p class="description">
+            Hi! I'm Rameet Singh Sachar. This is my personal portfolio website.
+            Feel free to explore and learn more about my work and projects.
+        </p>
+        <div class="links">
+            <a href="https://github.com/rameetsingh142">GitHub</a>
+            <a href="https://linkedin.com">LinkedIn</a>
+            <a href="mailto:your.email@example.com">Contact Me</a>
         </div>
-
-        <div class="max-w-2xl">
-            <h2 class="text-xl font-semibold mb-4 uppercase tracking-wider">About Me</h2>
-            <p class="leading-relaxed text-gray-600 italic">
-                Write a brief, engaging summary of your work here. Focus on your passion for cardiology, 
-                your research in biodesign, and your journey as a Director at Brainovative Labs.
-            </p>
-        </div>
-
-        <div class="mt-12 flex space-x-8 text-2xl">
-            <a href="https://linkedin.com/in/yourprofile" class="text-gray-400 hover:text-blue-700 transition">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="mailto:your@email.com" class="text-gray-400 hover:text-red-500 transition">
-                <i class="fas fa-envelope"></i>
-            </a>
-            <a href="https://github.com/yourusername" class="text-gray-400 hover:text-black transition">
-                <i class="fab fa-github"></i>
-            </a>
-        </div>
-    </main>
-
+    </div>
 </body>
 </html>

@@ -3,47 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Rameet Singh Sachar | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Smooth scrolling for navigation links */
+        html { scroll-behavior: smooth; }
+    </style>
 </head>
-<body class="bg-gray-50 font-sans text-gray-900">
+<body class="bg-white font-sans text-gray-800 antialiased">
 
-    <nav class="flex justify-end p-6 space-x-6 text-sm font-bold uppercase tracking-widest">
-        <a href="#projects" class="hover:text-blue-600 border-b-2 border-transparent hover:border-blue-600 transition">Projects</a>
-        <a href="#resume" class="hover:text-blue-600 border-b-2 border-transparent hover:border-blue-600 transition">Resume</a>
-        <a href="#contact" class="hover:text-blue-600 border-b-2 border-transparent hover:border-blue-600 transition">Contact</a>
+    <nav class="flex justify-end py-8 px-10 space-x-10 text-xs font-bold uppercase tracking-[0.2em] text-gray-500">
+        <a href="#projects" class="hover:text-black transition duration-300">Projects</a>
+        <a href="#resume" class="hover:text-black transition duration-300">Resume</a>
+        <a href="#contact" class="hover:text-black transition duration-300">Contact</a>
     </nav>
 
-    <main class="flex flex-col items-center justify-center min-h-[80vh] px-4 text-center">
+    <main class="flex flex-col items-center justify-center py-20 px-6 text-center">
         
-        <h1 class="text-4xl font-light mb-6 tracking-tight">Rameet Singh Sachar</h1>
+        <h1 class="text-5xl font-extralight mb-12 tracking-tight text-gray-900">Rameet Singh Sachar</h1>
 
-        <div class="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-lg mb-8">
-            <img src="https://via.placeholder.com/200" alt="Profile" class="w-full h-full object-cover">
+        <div class="w-56 h-56 rounded-full overflow-hidden ring-8 ring-gray-50 shadow-sm mb-16">
+            <img src="https://via.placeholder.com/300" alt="Rameet Singh Sachar" class="w-full h-full object-cover">
         </div>
 
-        <div class="max-w-2xl">
-            <h2 class="text-xl font-semibold mb-4 uppercase tracking-wider">About Me</h2>
-            <p class="leading-relaxed text-gray-600 italic">
-                I’m a healthcare technology researcher and biodesign fellow at AIIMS Delhi, working on translating unmet clinical needs into affordable, scalable medical devices. My background spans biomedical sensing, embedded systems, and human-centered design, with hands-on experience in neurorehabilitation, assistive wearables, and biosignal processing (EMG, IMU, EOG).
-                <br><br>
-                Previously, I served as a Junior Research Fellow at IIT Delhi, where I developed smart rehabilitation systems for stroke patients and conducted hospital-based testing in collaboration with AIIMS. I’m also the founder of Brainovative Labs, leading nationally awarded projects in silent speech recognition and biomechanics sensing, supported by government innovation grants. I hold an MCA and BCA, and my work is driven by a strong focus on building clinically validated, real-world healthcare solutions at the intersection of research, engineering, and product development.
+        <div class="max-w-3xl">
+            <h2 class="text-sm font-bold mb-8 uppercase tracking-[0.3em] text-blue-600">About Me</h2>
+            
+            <p class="text-lg leading-relaxed text-gray-600 mb-6 font-light">
+                [cite_start]I’m a healthcare technology researcher and **Biodesign Fellow at AIIMS Delhi** [cite: 7, 8][cite_start], focused on translating unmet clinical needs into affordable, scalable medical devices[cite: 9]. [cite_start]My background spans biomedical sensing, embedded systems, and human-centered design, with hands-on experience in neurorehabilitation, assistive wearables, and biosignal processing[cite: 5, 23].
+            </p>
+            
+            <p class="text-lg leading-relaxed text-gray-600 font-light">
+                [cite_start]Previously, I served as a **Junior Research Fellow at IIT Delhi**, where I developed smart rehabilitation systems for stroke patients in collaboration with AIIMS[cite: 10, 13, 15]. [cite_start]As the **Founder of Brainovative Labs**, I have led nationally awarded projects in silent speech recognition and biomechanics sensing, supported by government innovation grants[cite: 16, 18, 19, 20]. [cite_start]I hold an **MCA and BCA** [cite: 42][cite_start], and my work is driven by building clinically validated, real-world healthcare solutions[cite: 13, 18].
             </p>
         </div>
 
-        <div class="mt-12 flex space-x-8 text-2xl">
-            <a href="https://linkedin.com/in/rameetsinghsachar" class="text-gray-400 hover:text-blue-700 transition" target="_blank" rel="noopener noreferrer">
+        <div class="mt-20 flex space-x-10 text-3xl">
+            <a href="https://linkedin.com/in/rameetsinghsachar" class="text-gray-300 hover:text-blue-700 transition duration-300" target="_blank" rel="noopener noreferrer">
                 <i class="fab fa-linkedin"></i>
             </a>
-            <a href="mailto:rameet.sachar@email.com" class="text-gray-400 hover:text-red-500 transition">
+            <a href="mailto:rameet092@gmail.com" class="text-gray-300 hover:text-red-500 transition duration-300">
                 <i class="fas fa-envelope"></i>
             </a>
-            <a href="https://github.com/rameetsingh142" class="text-gray-400 hover:text-black transition" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/rameetsingh142" class="text-gray-300 hover:text-black transition duration-300" target="_blank" rel="noopener noreferrer">
                 <i class="fab fa-github"></i>
             </a>
         </div>
     </main>
+
+    <footer class="py-10 text-center text-xs text-gray-400 uppercase tracking-widest">
+        &copy; 2025 Rameet Singh Sachar
+    </footer>
 
 </body>
 </html>

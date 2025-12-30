@@ -5,77 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects | Rameet Singh Sachar</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .back-link {
+            letter-spacing: 0.15em;
+        }
+    </style>
 </head>
 <body class="bg-white font-sans text-gray-800 antialiased">
 
-    <nav class="flex justify-end py-8 px-10 space-x-10 text-xs font-bold uppercase tracking-[0.2em] text-gray-500">
-        <a href="index.html" class="hover:text-black transition duration-300">About</a>
-        <a href="projects.html" class="text-black border-b border-black">Projects</a>
-        <a href="resume.pdf" target="_blank" class="hover:text-black transition duration-300">Resume</a>
-    </nav>
+    <header class="p-8 lg:px-16">
+        <a href="index.html" class="back-link inline-flex items-center text-xs font-bold uppercase text-gray-900 hover:text-blue-600 transition duration-300">
+            <span class="mr-2">←</span> BACK TO HOME
+        </a>
+    </header>
 
-    <main class="max-w-4xl mx-auto py-16 px-6">
-        <h1 class="text-3xl font-light mb-16 tracking-[0.3em] uppercase text-gray-900 border-b pb-4">Projects</h1>
+    <main class="max-w-4xl mx-auto py-12 px-6">
+        <h1 class="text-3xl font-extralight mb-20 tracking-[0.3em] uppercase text-gray-900 border-b border-gray-100 pb-6">Projects</h1>
 
-        <div class="space-y-12">
+        <div class="space-y-20">
 
             <div class="flex items-start group">
-                <span class="text-xl font-light mr-6 mt-2 text-gray-400">01)</span>
-                <div class="flex-1 flex flex-col md:flex-row border border-gray-100 p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300">
-                    <div class="w-32 h-32 bg-gray-100 flex-shrink-0 rounded overflow-hidden mb-4 md:mb-0 md:mr-8">
-                        <img src="https://via.placeholder.com/150" alt="VANI" class="w-full h-full object-cover">
+                <span class="text-xl font-light mr-8 mt-1 text-gray-300">01)</span>
+                <div class="flex-1 flex flex-col md:flex-row items-center md:items-start">
+                    <div class="w-40 h-40 bg-gray-50 flex-shrink-0 rounded-lg overflow-hidden mb-6 md:mb-0 md:mr-10 ring-1 ring-gray-100 shadow-sm">
+                        <img src="https://via.placeholder.com/200" alt="VANI Device" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-500">
                     </div>
                     <div>
-                        <h2 class="text-xl font-semibold mb-3 tracking-wide text-gray-800 uppercase">VANI Silent Speech Device</h2>
-                        <p class="text-gray-600 leading-relaxed font-light">
-                            Prototyped a silent speech recognition device for laryngeal patients to restore communication[cite: 18]. 
-                            Secured 10 lakh in grants from DST NIDHI Prayas for its ongoing innovation and development[cite: 19].
+                        <h2 class="text-lg font-bold mb-4 tracking-widest text-gray-900 uppercase">VANI Silent Speech Device</h2>
+                        <p class="text-lg leading-relaxed text-gray-500 font-light">
+                            [cite_start]Prototyped a silent speech recognition device for laryngeal patients to restore communication[cite: 18]. 
+                            [cite_start]Engineered biomechanics accuracy with the Flexiwave EMG sensor and secured 10 lakh in grants from DST NIDHI Prayas[cite: 18, 19].
                         </p>
                     </div>
                 </div>
             </div>
 
             <div class="flex items-start group">
-                <span class="text-xl font-light mr-6 mt-2 text-gray-400">02)</span>
-                <div class="flex-1 flex flex-col md:flex-row border border-gray-100 p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300">
-                    <div class="w-32 h-32 bg-gray-100 flex-shrink-0 rounded overflow-hidden mb-4 md:mb-0 md:mr-8">
-                        <img src="https://via.placeholder.com/150" alt="Smart Glove" class="w-full h-full object-cover">
+                <span class="text-xl font-light mr-8 mt-1 text-gray-300">02)</span>
+                <div class="flex-1 flex flex-col md:flex-row items-center md:items-start">
+                    <div class="w-40 h-40 bg-gray-50 flex-shrink-0 rounded-lg overflow-hidden mb-6 md:mb-0 md:mr-10 ring-1 ring-gray-100 shadow-sm">
+                        <img src="https://via.placeholder.com/200" alt="Smart Glove" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-500">
                     </div>
                     <div>
-                        <h2 class="text-xl font-semibold mb-3 tracking-wide text-gray-800 uppercase">Smart Rehabilitation Glove</h2>
-                        <p class="text-gray-600 leading-relaxed font-light">
-                            Designed a rehabilitation glove using EMG, IMU, and haptic motors for stroke-affected patients[cite: 14]. 
-                            Currently undergoing testing at AIIMS New Delhi for real-time motion and muscle feedback[cite: 15].
+                        <h2 class="text-lg font-bold mb-4 tracking-widest text-gray-900 uppercase">Smart Rehabilitation Glove</h2>
+                        <p class="text-lg leading-relaxed text-gray-500 font-light">
+                            [cite_start]Designed a rehabilitation glove using EMG, IMU, and haptic motors for stroke recovery[cite: 14]. 
+                            [cite_start]Conducted hospital-based testing in collaboration with AIIMS New Delhi to provide real-time muscle feedback[cite: 15].
                         </p>
                     </div>
                 </div>
             </div>
 
             <div class="flex items-start group">
-                <span class="text-xl font-light mr-6 mt-2 text-gray-400">03)</span>
-                <div class="flex-1 flex flex-col md:flex-row border border-gray-100 p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300">
-                    <div class="w-32 h-32 bg-gray-100 flex-shrink-0 rounded overflow-hidden mb-4 md:mb-0 md:mr-8">
-                        <img src="https://via.placeholder.com/150" alt="EOG Glasses" class="w-full h-full object-cover">
+                <span class="text-xl font-light mr-8 mt-1 text-gray-300">03)</span>
+                <div class="flex-1 flex flex-col md:flex-row items-center md:items-start">
+                    <div class="w-40 h-40 bg-gray-50 flex-shrink-0 rounded-lg overflow-hidden mb-6 md:mb-0 md:mr-10 ring-1 ring-gray-100 shadow-sm">
+                        <img src="https://via.placeholder.com/200" alt="EOG Glasses" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-500">
                     </div>
                     <div>
-                        <h2 class="text-xl font-semibold mb-3 tracking-wide text-gray-800 uppercase">Smart EOG Glasses</h2>
-                        <p class="text-gray-600 leading-relaxed font-light">
-                            Innovated wearable glasses that utilize Electrooculography (EOG) to capture a photograph with the blink of an eye[cite: 49].
+                        <h2 class="text-lg font-bold mb-4 tracking-widest text-gray-900 uppercase">Smart EOG Glasses</h2>
+                        <p class="text-lg leading-relaxed text-gray-500 font-light">
+                            [cite_start]Innovated wearable glasses that use Electrooculography (EOG) to trigger a photograph capture with a simple blink of the eye[cite: 49].
                         </p>
                     </div>
                 </div>
             </div>
 
             <div class="flex items-start group">
-                <span class="text-xl font-light mr-6 mt-2 text-gray-400">04)</span>
-                <div class="flex-1 flex flex-col md:flex-row border border-gray-100 p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300">
-                    <div class="w-32 h-32 bg-gray-100 flex-shrink-0 rounded overflow-hidden mb-4 md:mb-0 md:mr-8">
-                        <img src="https://via.placeholder.com/150" alt="Alzheimer Band" class="w-full h-full object-cover">
+                <span class="text-xl font-light mr-8 mt-1 text-gray-300">04)</span>
+                <div class="flex-1 flex flex-col md:flex-row items-center md:items-start">
+                    <div class="w-40 h-40 bg-gray-50 flex-shrink-0 rounded-lg overflow-hidden mb-6 md:mb-0 md:mr-10 ring-1 ring-gray-100 shadow-sm">
+                        <img src="https://via.placeholder.com/200" alt="Alzheimer Band" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-500">
                     </div>
                     <div>
-                        <h2 class="text-xl font-semibold mb-3 tracking-wide text-gray-800 uppercase">Alzheimer Communication Band</h2>
-                        <p class="text-gray-600 leading-relaxed font-light">
-                            Created a GPS-enabled wearable for Alzheimer patients, allowing real-time location tracking and two-way communication with caregivers[cite: 52].
+                        <h2 class="text-lg font-bold mb-4 tracking-widest text-gray-900 uppercase">Alzheimer Communication Band</h2>
+                        <p class="text-lg leading-relaxed text-gray-500 font-light">
+                            [cite_start]Created a GPS-enabled wearable for Alzheimer patients to track location and enable two-way communication with caregivers[cite: 52].
                         </p>
                     </div>
                 </div>
@@ -84,7 +90,7 @@
         </div>
     </main>
 
-    <footer class="py-12 text-center text-xs text-gray-400 uppercase tracking-widest">
+    <footer class="py-20 text-center text-[10px] text-gray-400 uppercase tracking-[0.4em]">
         &copy; 2025 Rameet Singh Sachar
     </footer>
 

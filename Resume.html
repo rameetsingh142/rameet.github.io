@@ -9,6 +9,14 @@
         tailwind.config = {
             darkMode: 'class',
         }
+
+        // ANTI-FLASH SCRIPT: Checks and applies theme before the page renders
+        if (localStorage.getItem('theme') === 'dark' || 
+            (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
     </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -55,23 +63,19 @@
         const themeIcon = document.getElementById('theme-icon');
         const htmlElement = document.documentElement;
 
-        // Check for saved user preference, if any
-        if (localStorage.getItem('theme') === 'dark') {
-            htmlElement.classList.add('dark');
-            themeIcon.classList.remove('fa-moon');
-            themeIcon.classList.add('fa-sun');
+        // Correctly set initial icon based on applied theme
+        if (htmlElement.classList.contains('dark')) {
+            themeIcon.classList.replace('fa-moon', 'fa-sun');
         }
 
         themeToggle.addEventListener('click', () => {
             htmlElement.classList.toggle('dark');
 
             if (htmlElement.classList.contains('dark')) {
-                themeIcon.classList.remove('fa-moon');
-                themeIcon.classList.add('fa-sun');
+                themeIcon.classList.replace('fa-moon', 'fa-sun');
                 localStorage.setItem('theme', 'dark');
             } else {
-                themeIcon.classList.remove('fa-sun');
-                themeIcon.classList.add('fa-moon');
+                themeIcon.classList.replace('fa-sun', 'fa-moon');
                 localStorage.setItem('theme', 'light');
             }
         });

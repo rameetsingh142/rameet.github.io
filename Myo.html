@@ -5,74 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Detail | Rameet Singh Sachar</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Tailwind dark mode configuration
+        tailwind.config = {
+            darkMode: 'class',
+        }
+
+        // Anti-Flash Script: Applies theme before the page renders to prevent flicker
+        if (localStorage.getItem('theme') === 'dark' || 
+            (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body class="bg-gray-50 font-sans text-gray-900 antialiased">
+<body class="bg-gray-50 dark:bg-gray-900 font-sans text-gray-900 dark:text-gray-100 antialiased transition-colors duration-300">
 
-    <header class="p-8 lg:px-16">
-        <a href="project.html" class="inline-flex items-center text-sm font-bold uppercase tracking-widest hover:text-blue-600 transition duration-300">
+    <div class="fixed top-6 left-6 z-50">
+        <button id="theme-toggle" class="text-2xl text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition">
+            <i id="theme-icon" class="fas fa-moon"></i>
+        </button>
+    </div>
+
+    <header class="p-8 lg:px-16 flex justify-end">
+        <a href="project.html" class="inline-flex items-center text-sm font-bold uppercase tracking-widest hover:text-blue-600 dark:hover:text-blue-400 transition duration-300">
             <span class="mr-2">←</span> BACK TO PROJECTS
         </a>
     </header>
 
     <main class="max-w-4xl mx-auto py-12 px-6">
         
-        <h1 class="text-4xl font-light mb-12 tracking-tight text-center uppercase border-b border-gray-200 pb-8">
+        <h1 class="text-4xl font-light mb-12 tracking-tight text-center uppercase border-b border-gray-200 dark:border-gray-800 pb-8 dark:text-white">
             MYO Motion
         </h1>
-   <div class="w-full aspect-video bg-white rounded-xl shadow-lg border-4 border-white overflow-hidden mb-16 flex items-center justify-center p-4">
+
+        <div class="w-full aspect-video bg-white dark:bg-gray-800 rounded-xl shadow-lg border-4 border-white dark:border-gray-800 overflow-hidden mb-16 flex items-center justify-center p-4">
             <img src="https://raw.githubusercontent.com/rameetsingh142/rameet.github.io/main/Picture1.png" 
                  alt="Main Project Photo" 
                  class="max-w-full max-h-full w-auto h-auto object-contain">
         </div>
 
       <section class="mb-16">
-            <h2 class="text-xl font-semibold mb-8 uppercase tracking-wider">Project Overview</h2>
+            <h2 class="text-xl font-semibold mb-8 uppercase tracking-wider dark:text-blue-400">Project Overview</h2>
             
-            <div class="space-y-8 text-lg leading-relaxed text-gray-600 italic font-light">
+            <div class="space-y-8 text-lg leading-relaxed text-gray-600 dark:text-gray-300 italic font-light">
                 <p>
                     MyoFlex is a custom-designed wearable system that integrates single-channel electromyography (EMG) with 6-axis inertial motion sensing to simultaneously capture muscle activity and limb movement. The device is built around the Flexiwave EMG sensor by Brainovative Labs and a compact IMU, enabling real-time bio-signal acquisition in a portable and user-friendly form factor.
+                </p>
 
                 <p>
                     Designed with a focus on wearability, rapid setup, and signal reliability, MyoFlex features a snap-on electrode mechanism that ensures consistent electrode placement while minimizing setup time. The compact design allows it to be comfortably used in both controlled lab environments and real-world scenarios.
+                </p>
 
                 <div class="pt-4">
-                    <h3 class="text-sm font-bold mb-4 uppercase tracking-[0.2em] text-gray-900 not-italic">Key Capabilities</h3>
+                    <h3 class="text-sm font-bold mb-4 uppercase tracking-[0.2em] text-gray-900 dark:text-white not-italic">Key Capabilities</h3>
                     <ul class="list-disc pl-5 space-y-2">
                         <li>Single-channel EMG acquisition for muscle activation analysis.</li>
-                        <li>6-axis IMU (accelerometer + gyroscope) for precise motion tracking</li>
-                        <li>Wearable, lightweight, and compact hardware design</li>
+                        <li>6-axis IMU (accelerometer + gyroscope) for precise motion tracking.</li>
+                        <li>Wearable, lightweight, and compact hardware design.</li>
                         <li>Quick and secure snap-electrode system for improved usability.</li>
                     </ul>
                 </div>
 
                 <div class="pt-4">
-                    <h3 class="text-sm font-bold mb-4 uppercase tracking-[0.2em] text-gray-900 not-italic">Interactive Demonstration</h3>
+                    <h3 class="text-sm font-bold mb-4 uppercase tracking-[0.2em] text-gray-900 dark:text-white not-italic">Interactive Demonstration</h3>
                     <p class="mb-4">To validate and showcase the system’s real-time performance, a custom Flappy Bird game was developed in Unity, controlled entirely using muscle signals from MyoFlex. This interactive application demonstrated reliable EMG-based control and highlighted the device’s potential in human–computer interaction (HCI) and assistive technologies.</p>
-                 
                 </div>
             </div>
         </section>
 
-       <section class="mb-16">
+        <section class="mb-16">
             <h2 class="text-sm font-bold mb-8 uppercase tracking-[0.2em] text-gray-400">Other Photos</h2>
             <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
                 
-                <div class="aspect-square bg-white rounded-lg shadow border-2 border-white overflow-hidden flex items-center justify-center p-2">
-                    <img src="https://raw.githubusercontent.com/rameetsingh142/rameet.github.io/main/width_367.webp
-" 
+                <div class="aspect-square bg-white dark:bg-gray-800 rounded-lg shadow border-2 border-white dark:border-gray-800 overflow-hidden flex items-center justify-center p-2">
+                    <img src="https://raw.githubusercontent.com/rameetsingh142/rameet.github.io/main/width_367.webp" 
                          alt="Detail 1" 
                          class="max-w-full max-h-full w-auto h-auto object-contain">
                 </div>
 
-                <div class="aspect-square bg-white rounded-lg shadow border-2 border-white overflow-hidden flex items-center justify-center p-2">
-                    <img src="https://raw.githubusercontent.com/rameetsingh142/rameet.github.io/main/wet.png
-" 
+                <div class="aspect-square bg-white dark:bg-gray-800 rounded-lg shadow border-2 border-white dark:border-gray-800 overflow-hidden flex items-center justify-center p-2">
+                    <img src="https://raw.githubusercontent.com/rameetsingh142/rameet.github.io/main/wet.png" 
                          alt="Detail 2" 
                          class="max-w-full max-h-full w-auto h-auto object-contain">
                 </div>
 
-                <div class="aspect-square bg-white rounded-lg shadow border-2 border-white overflow-hidden flex items-center justify-center p-2">
+                <div class="aspect-square bg-white dark:bg-gray-800 rounded-lg shadow border-2 border-white dark:border-gray-800 overflow-hidden flex items-center justify-center p-2">
                     <img src="https://github.com/rameetsingh142/rameet.github.io/blob/main/WhatsApp_Image_2024-09-04_at_18.01.08_8d510daf-removebg-preview.png?raw=true" 
                          alt="Detail 3" 
                          class="max-w-full max-h-full w-auto h-auto object-contain">
@@ -81,29 +101,51 @@
             </div>
         </section>
 
-        <section class="max-w-2xl mx-auto">
-    <h2 class="text-sm font-bold mb-8 uppercase tracking-[0.2em] text-center text-gray-400">
-        Demo Video
-    </h2>
+        <section class="max-w-2xl mx-auto mb-20">
+            <h2 class="text-sm font-bold mb-8 uppercase tracking-[0.2em] text-center text-gray-400">
+                Demo Video
+            </h2>
 
-    <div class="aspect-video bg-black rounded-xl shadow-2xl overflow-hidden border-4 border-white">
-        <iframe
-            class="w-full h-full"
-            src="https://www.youtube.com/embed/76erdI8rQ84"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen>
-        </iframe>
-    </div>
-</section>
-
+            <div class="aspect-video bg-black rounded-xl shadow-2xl overflow-hidden border-4 border-white dark:border-gray-800">
+                <iframe
+                    class="w-full h-full"
+                    src="https://www.youtube.com/embed/76erdI8rQ84"
+                    title="MYO Motion Demo"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
 
     </main>
 
     <footer class="py-20 text-center text-xs text-gray-400 uppercase tracking-widest">
         &copy; 2026 Rameet Singh Sachar
     </footer>
+
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+        const htmlElement = document.documentElement;
+
+        // Set initial icon correctly based on applied theme
+        if (htmlElement.classList.contains('dark')) {
+            themeIcon.classList.replace('fa-moon', 'fa-sun');
+        }
+
+        themeToggle.addEventListener('click', () => {
+            htmlElement.classList.toggle('dark');
+
+            if (htmlElement.classList.contains('dark')) {
+                themeIcon.classList.replace('fa-moon', 'fa-sun');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                themeIcon.classList.replace('fa-sun', 'fa-moon');
+                localStorage.setItem('theme', 'light');
+            }
+        });
+    </script>
 
 </body>
 </html>

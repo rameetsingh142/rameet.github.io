@@ -6,12 +6,10 @@
     <title>Projects | Rameet Singh Sachar</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        // Tailwind dark mode configuration
         tailwind.config = {
             darkMode: 'class',
         }
 
-        // Anti-Flash Script: Applies theme before the page renders to prevent white flicker
         if (localStorage.getItem('theme') === 'dark' || 
             (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             document.documentElement.classList.add('dark');
@@ -29,147 +27,147 @@
         </button>
     </div>
 
-    <header class="p-8 lg:px-16 flex justify-end">
-        <a href="index.html" class="inline-flex items-center text-sm font-bold uppercase tracking-widest hover:text-blue-600 dark:hover:text-blue-400 transition duration-300">
+    <header class="p-6 md:p-8 lg:px-16 flex justify-end">
+        <a href="index.html" class="inline-flex items-center text-[10px] md:text-sm font-bold uppercase tracking-widest hover:text-blue-600 dark:hover:text-blue-400 transition duration-300">
             <span class="mr-2">←</span> BACK TO HOME
         </a>
     </header>
 
-    <main class="max-w-4xl mx-auto py-12 px-6">
-        <h1 class="text-4xl font-light mb-16 tracking-tight text-center uppercase border-b border-gray-200 dark:border-gray-800 pb-8 dark:text-white">Projects</h1>
+    <main class="max-w-4xl mx-auto py-8 md:py-12 px-6">
+        <h1 class="text-3xl md:text-4xl font-light mb-12 md:mb-16 tracking-tight text-center uppercase border-b border-gray-200 dark:border-gray-800 pb-6 md:pb-8 dark:text-white">Projects</h1>
 
-        <div class="space-y-20">
+        <div class="space-y-16 md:space-y-20">
 
             <a href="Vani.html" class="block group flex items-start">
-                <span class="text-xl font-light mr-8 mt-1 text-gray-300 dark:text-gray-700">01)</span>
-                <div class="flex-1 flex flex-col md:flex-row items-center md:items-start group-hover:bg-white dark:group-hover:bg-gray-800 transition p-4 rounded-xl shadow-none group-hover:shadow-lg">
-                    <div class="w-40 h-40 bg-white dark:bg-gray-800 flex-shrink-0 rounded-lg overflow-hidden mb-6 md:mb-0 md:mr-10 shadow-lg border-4 border-white dark:border-gray-700">
+                <span class="text-base md:text-xl font-light mr-4 md:mr-8 mt-1 text-gray-300 dark:text-gray-700">01)</span>
+                <div class="flex-1 flex flex-col md:flex-row items-center md:items-start group-hover:bg-white dark:group-hover:bg-gray-800 transition p-2 md:p-4 rounded-xl shadow-none group-hover:shadow-lg">
+                    <div class="w-32 h-32 md:w-40 md:h-40 bg-white dark:bg-gray-800 flex-shrink-0 rounded-lg overflow-hidden mb-6 md:mb-0 md:mr-10 shadow-lg border-4 border-white dark:border-gray-700">
                         <img src="https://raw.githubusercontent.com/rameetsingh142/rameet.github.io/main/WhatsApp_Image_2024-04-12_at_03.52.17_1170d7e4-removebg-preview.png" alt="VANI Device" class="w-full h-full object-cover">
                     </div>
                     <div>
-                        <h2 class="text-xl font-semibold mb-4 uppercase tracking-wider group-hover:text-blue-600 dark:group-hover:text-blue-400 transition">VANI Silent Speech Recognition Device</h2>
-                        <p class="leading-relaxed text-gray-600 dark:text-gray-400 italic">
-                            VANI is a Silent Speech Recognition (SSR) device designed to restore communication for laryngeal and speech-impaired patients by translating silent articulatory muscle movements into audible speech. The system leverages advanced Electromyography (EMG) to capture muscle activation patterns associated with speech production, even in the absence of vocal sound.
+                        <h2 class="text-lg md:text-xl font-semibold mb-3 md:mb-4 uppercase tracking-wider group-hover:text-blue-600 dark:group-hover:text-blue-400 transition text-center md:text-left">VANI Silent Speech Recognition Device</h2>
+                        <p class="leading-relaxed text-sm md:text-base text-gray-600 dark:text-gray-400 italic text-center md:text-left">
+                            VANI is a Silent Speech Recognition (SSR) device designed to restore communication for laryngeal patients by translating muscle movements into audible speech.
                         </p>
                     </div>
                 </div>
             </a>
 
             <a href="Myo.html" class="block group flex items-start">
-                <span class="text-xl font-light mr-8 mt-1 text-gray-300 dark:text-gray-700">02)</span>
-                <div class="flex-1 flex flex-col md:flex-row items-center md:items-start group-hover:bg-white dark:group-hover:bg-gray-800 transition p-4 rounded-xl shadow-none group-hover:shadow-lg">
-                    <div class="w-40 h-40 bg-white dark:bg-gray-800 flex-shrink-0 rounded-lg overflow-hidden mb-6 md:mb-0 md:mr-10 shadow-lg border-4 border-white dark:border-gray-700">
+                <span class="text-base md:text-xl font-light mr-4 md:mr-8 mt-1 text-gray-300 dark:text-gray-700">02)</span>
+                <div class="flex-1 flex flex-col md:flex-row items-center md:items-start group-hover:bg-white dark:group-hover:bg-gray-800 transition p-2 md:p-4 rounded-xl shadow-none group-hover:shadow-lg">
+                    <div class="w-32 h-32 md:w-40 md:h-40 bg-white dark:bg-gray-800 flex-shrink-0 rounded-lg overflow-hidden mb-6 md:mb-0 md:mr-10 shadow-lg border-4 border-white dark:border-gray-700">
                         <img src="https://raw.githubusercontent.com/rameetsingh142/rameet.github.io/main/Picture1.png" alt="Smart Glove" class="w-full h-full object-cover">
                     </div>
                     <div>
-                        <h2 class="text-xl font-semibold mb-4 uppercase tracking-wider group-hover:text-blue-600 dark:group-hover:text-blue-400 transition">MYO MOTION</h2>
-                        <p class="leading-relaxed text-gray-600 dark:text-gray-400 italic">
-                           MyoFlex is a custom-designed wearable system that integrates single-channel electromyography (EMG) with 6-axis inertial motion sensing to simultaneously capture muscle activity and limb movement. The device is built around the Flexiwave EMG sensor by Brainovative Labs and a compact IMU, enabling real-time bio-signal acquisition in a portable and user-friendly form factor.
+                        <h2 class="text-lg md:text-xl font-semibold mb-3 md:mb-4 uppercase tracking-wider group-hover:text-blue-600 dark:group-hover:text-blue-400 transition text-center md:text-left">MYO MOTION</h2>
+                        <p class="leading-relaxed text-sm md:text-base text-gray-600 dark:text-gray-400 italic text-center md:text-left">
+                           Wearable system integrating single-channel EMG with motion sensing to capture muscle activity and limb movement.
                         </p>
                     </div>
                 </div>
             </a>
 
             <a href="EOG.html" class="block group flex items-start">
-                <span class="text-xl font-light mr-8 mt-1 text-gray-30 dark:text-gray-700">03)</span>
-                <div class="flex-1 flex flex-col md:flex-row items-center md:items-start group-hover:bg-white dark:group-hover:bg-gray-800 transition p-4 rounded-xl shadow-none group-hover:shadow-lg">
-                    <div class="w-40 h-40 bg-white dark:bg-gray-800 flex-shrink-0 rounded-lg overflow-hidden mb-6 md:mb-0 md:mr-10 shadow-lg border-4 border-white dark:border-gray-700">
+                <span class="text-base md:text-xl font-light mr-4 md:mr-8 mt-1 text-gray-30 dark:text-gray-700">03)</span>
+                <div class="flex-1 flex flex-col md:flex-row items-center md:items-start group-hover:bg-white dark:group-hover:bg-gray-800 transition p-2 md:p-4 rounded-xl shadow-none group-hover:shadow-lg">
+                    <div class="w-32 h-32 md:w-40 md:h-40 bg-white dark:bg-gray-800 flex-shrink-0 rounded-lg overflow-hidden mb-6 md:mb-0 md:mr-10 shadow-lg border-4 border-white dark:border-gray-700">
                         <img src="https://raw.githubusercontent.com/rameetsingh142/rameet.github.io/main/Picture2.png" alt="EOG Glasses" class="w-full h-full object-cover">
                     </div>
                     <div>
-                        <h2 class="text-xl font-semibold mb-4 uppercase tracking-wider group-hover:text-blue-600 dark:group-hover:text-blue-400 transition">Smart EOG Glasses</h2>
-                        <p class="leading-relaxed text-gray-600 dark:text-gray-400 italic">
-                          Developed an interactive wearable project using the BIOAmp EXG Pill by Upside Down Labs that enables hands-free photography through eye blinks. The system leverages Electrooculography (EOG) to detect intentional eye blink patterns and trigger image capture.
+                        <h2 class="text-lg md:text-xl font-semibold mb-3 md:mb-4 uppercase tracking-wider group-hover:text-blue-600 dark:group-hover:text-blue-400 transition text-center md:text-left">Smart EOG Glasses</h2>
+                        <p class="leading-relaxed text-sm md:text-base text-gray-600 dark:text-gray-400 italic text-center md:text-left">
+                          Hands-free photography through eye blinks using Electrooculography (EOG) to detect intentional patterns.
                         </p>
                     </div>
                 </div>
             </a>
 
             <a href="Flexiwave.html" class="block group flex items-start">
-                <span class="text-xl font-light mr-8 mt-1 text-gray-300 dark:text-gray-700">04)</span>
-                <div class="flex-1 flex flex-col md:flex-row items-center md:items-start group-hover:bg-white dark:group-hover:bg-gray-800 transition p-4 rounded-xl shadow-none group-hover:shadow-lg">
-                    <div class="w-40 h-40 bg-white dark:bg-gray-800 flex-shrink-0 rounded-lg overflow-hidden mb-6 md:mb-0 md:mr-10 shadow-lg border-4 border-white dark:border-gray-700">
+                <span class="text-base md:text-xl font-light mr-4 md:mr-8 mt-1 text-gray-300 dark:text-gray-700">04)</span>
+                <div class="flex-1 flex flex-col md:flex-row items-center md:items-start group-hover:bg-white dark:group-hover:bg-gray-800 transition p-2 md:p-4 rounded-xl shadow-none group-hover:shadow-lg">
+                    <div class="w-32 h-32 md:w-40 md:h-40 bg-white dark:bg-gray-800 flex-shrink-0 rounded-lg overflow-hidden mb-6 md:mb-0 md:mr-10 shadow-lg border-4 border-white dark:border-gray-700">
                         <img src="https://raw.githubusercontent.com/rameetsingh142/rameet.github.io/main/gh.png" class="w-full h-full object-cover">
                     </div>
                     <div>
-                        <h2 class="text-xl font-semibold mb-4 uppercase tracking-wider group-hover:text-blue-600 dark:group-hover:text-blue-400 transition">Flexiwave EMG Sensor</h2>
-                        <p class="leading-relaxed text-gray-600 dark:text-gray-400 italic">
-                            The Brainovative Flexiwave is an advanced Electromyography (EMG) sensor designed to deliver accurate, reliable, and adaptable muscle signal acquisition for next-generation physiological monitoring applications.
+                        <h2 class="text-lg md:text-xl font-semibold mb-3 md:mb-4 uppercase tracking-wider group-hover:text-blue-600 dark:group-hover:text-blue-400 transition text-center md:text-left">Flexiwave EMG Sensor</h2>
+                        <p class="leading-relaxed text-sm md:text-base text-gray-600 dark:text-gray-400 italic text-center md:text-left">
+                            Advanced EMG sensor designed to deliver accurate muscle signal acquisition for physiological monitoring.
                         </p>
                     </div>
                 </div>
             </a>
 
             <a href="pulseox.html" class="block group flex items-start">
-                <span class="text-xl font-light mr-8 mt-1 text-gray-300 dark:text-gray-700">05)</span>
-                <div class="flex-1 flex flex-col md:flex-row items-center md:items-start group-hover:bg-white dark:group-hover:bg-gray-800 transition p-4 rounded-xl shadow-none group-hover:shadow-lg">
-                    <div class="w-40 h-40 bg-white dark:bg-gray-800 flex-shrink-0 rounded-lg overflow-hidden mb-6 md:mb-0 md:mr-10 shadow-lg border-4 border-white dark:border-gray-700">
+                <span class="text-base md:text-xl font-light mr-4 md:mr-8 mt-1 text-gray-300 dark:text-gray-700">05)</span>
+                <div class="flex-1 flex flex-col md:flex-row items-center md:items-start group-hover:bg-white dark:group-hover:bg-gray-800 transition p-2 md:p-4 rounded-xl shadow-none group-hover:shadow-lg">
+                    <div class="w-32 h-32 md:w-40 md:h-40 bg-white dark:bg-gray-800 flex-shrink-0 rounded-lg overflow-hidden mb-6 md:mb-0 md:mr-10 shadow-lg border-4 border-white dark:border-gray-700">
                         <img src="https://raw.githubusercontent.com/rameetsingh142/rameet.github.io/main/rv.png" alt="QR Oximeter" class="w-full h-full object-cover">
                     </div>
                     <div>
-                        <h2 class="text-xl font-semibold mb-4 uppercase tracking-wider group-hover:text-blue-600 dark:group-hover:text-blue-400 transition">QR Pulse Oximeter</h2>
-                        <p class="leading-relaxed text-gray-600 dark:text-gray-400 italic">
-                            Designed an enhanced pulse oximeter that not only measures blood oxygen saturation (SpO₂) and pulse rate, but also provides proactive health guidance during critical situations.
+                        <h2 class="text-lg md:text-xl font-semibold mb-3 md:mb-4 uppercase tracking-wider group-hover:text-blue-600 dark:group-hover:text-blue-400 transition text-center md:text-left">QR Pulse Oximeter</h2>
+                        <p class="leading-relaxed text-sm md:text-base text-gray-600 dark:text-gray-400 italic text-center md:text-left">
+                            Enhanced oximeter that provides proactive health guidance through dynamic QR alerts during critical situations.
                         </p>
                     </div>
                 </div>
             </a>
 
             <a href="tshirt.html" class="block group flex items-start">
-                <span class="text-xl font-light mr-8 mt-1 text-gray-300 dark:text-gray-700">06)</span>
-                <div class="flex-1 flex flex-col md:flex-row items-center md:items-start group-hover:bg-white dark:group-hover:bg-gray-800 transition p-4 rounded-xl shadow-none group-hover:shadow-lg">
-                    <div class="w-40 h-40 bg-white dark:bg-gray-800 flex-shrink-0 rounded-lg overflow-hidden mb-6 md:mb-0 md:mr-10 shadow-lg border-4 border-white dark:border-gray-700">
+                <span class="text-base md:text-xl font-light mr-4 md:mr-8 mt-1 text-gray-300 dark:text-gray-700">06)</span>
+                <div class="flex-1 flex flex-col md:flex-row items-center md:items-start group-hover:bg-white dark:group-hover:bg-gray-800 transition p-2 md:p-4 rounded-xl shadow-none group-hover:shadow-lg">
+                    <div class="w-32 h-32 md:w-40 md:h-40 bg-white dark:bg-gray-800 flex-shrink-0 rounded-lg overflow-hidden mb-6 md:mb-0 md:mr-10 shadow-lg border-4 border-white dark:border-gray-700">
                         <img src="https://raw.githubusercontent.com/rameetsingh142/rameet.github.io/main/ll.png" alt="Posture Shirt" class="w-full h-full object-cover">
                     </div>
                     <div>
-                        <h2 class="text-xl font-semibold mb-4 uppercase tracking-wider group-hover:text-blue-600 dark:group-hover:text-blue-400 transition">Posture Correction T-shirt</h2>
-                        <p class="leading-relaxed text-gray-600 dark:text-gray-400 italic">
-                            Developed a smart posture-correcting wearable t-shirt that combines IMU-based posture tracking with real-time haptic feedback to help users maintain proper posture throughout daily activities.
+                        <h2 class="text-lg md:text-xl font-semibold mb-3 md:mb-4 uppercase tracking-wider group-hover:text-blue-600 dark:group-hover:text-blue-400 transition text-center md:text-left">Posture Correction T-shirt</h2>
+                        <p class="leading-relaxed text-sm md:text-base text-gray-600 dark:text-gray-400 italic text-center md:text-left">
+                            Smart wearable t-shirt combining IMU tracking with haptic feedback to help maintain proper posture.
                         </p>
                     </div>
                 </div>
             </a>
 
             <a href="glove.html" class="block group flex items-start">
-                <span class="text-xl font-light mr-8 mt-1 text-gray-300 dark:text-gray-700">07)</span>
-                <div class="flex-1 flex flex-col md:flex-row items-center md:items-start group-hover:bg-white dark:group-hover:bg-gray-800 transition p-4 rounded-xl shadow-none group-hover:shadow-lg">
-                    <div class="w-40 h-40 bg-white dark:bg-gray-800 flex-shrink-0 rounded-lg overflow-hidden mb-6 md:mb-0 md:mr-10 shadow-lg border-4 border-white dark:border-gray-700">
+                <span class="text-base md:text-xl font-light mr-4 md:mr-8 mt-1 text-gray-300 dark:text-gray-700">07)</span>
+                <div class="flex-1 flex flex-col md:flex-row items-center md:items-start group-hover:bg-white dark:group-hover:bg-gray-800 transition p-2 md:p-4 rounded-xl shadow-none group-hover:shadow-lg">
+                    <div class="w-32 h-32 md:w-40 md:h-40 bg-white dark:bg-gray-800 flex-shrink-0 rounded-lg overflow-hidden mb-6 md:mb-0 md:mr-10 shadow-lg border-4 border-white dark:border-gray-700">
                         <img src="https://raw.githubusercontent.com/rameetsingh142/rameet.github.io/main/dsfgh.png" alt="Sign Glove" class="w-full h-full object-cover">
                     </div>
                     <div>
-                        <h2 class="text-xl font-semibold mb-4 uppercase tracking-wider group-hover:text-blue-600 dark:group-hover:text-blue-400 transition">Sign-to-Speech Glove</h2>
-                        <p class="leading-relaxed text-gray-600 dark:text-gray-400 italic">
-                            Developed a Sign-to-Speech Smart Glove that translates hand gestures and sign language into audible speech, enabling more accessible communication for individuals with speech and hearing impairments.
+                        <h2 class="text-lg md:text-xl font-semibold mb-3 md:mb-4 uppercase tracking-wider group-hover:text-blue-600 dark:group-hover:text-blue-400 transition text-center md:text-left">Sign-to-Speech Glove</h2>
+                        <p class="leading-relaxed text-sm md:text-base text-gray-600 dark:text-gray-400 italic text-center md:text-left">
+                            Smart glove that translates sign language into audible speech, enabling accessible communication.
                         </p>
                     </div>
                 </div>
             </a>
 
             <a href="band.html" class="block group flex items-start">
-                <span class="text-xl font-light mr-8 mt-1 text-gray-300 dark:text-gray-700">08)</span>
-                <div class="flex-1 flex flex-col md:flex-row items-center md:items-start group-hover:bg-white dark:group-hover:bg-gray-800 transition p-4 rounded-xl shadow-none group-hover:shadow-lg">
-                    <div class="w-40 h-40 bg-white dark:bg-gray-800 flex-shrink-0 rounded-lg overflow-hidden mb-6 md:mb-0 md:mr-10 shadow-lg border-4 border-white dark:border-gray-700">
+                <span class="text-base md:text-xl font-light mr-4 md:mr-8 mt-1 text-gray-300 dark:text-gray-700">08)</span>
+                <div class="flex-1 flex flex-col md:flex-row items-center md:items-start group-hover:bg-white dark:group-hover:bg-gray-800 transition p-2 md:p-4 rounded-xl shadow-none group-hover:shadow-lg">
+                    <div class="w-32 h-32 md:w-40 md:h-40 bg-white dark:bg-gray-800 flex-shrink-0 rounded-lg overflow-hidden mb-6 md:mb-0 md:mr-10 shadow-lg border-4 border-white dark:border-gray-700">
                         <img src="https://raw.githubusercontent.com/rameetsingh142/rameet.github.io/main/kk.png" alt="Safety Band" class="w-full h-full object-cover">
                     </div>
                     <div>
-                        <h2 class="text-xl font-semibold mb-4 uppercase tracking-wider group-hover:text-blue-600 dark:group-hover:text-blue-400 transition">Alzheimer Communication Band</h2>
-                        <p class="leading-relaxed text-gray-600 dark:text-gray-400 italic">
-                            Developed a wearable safety band designed to enhance the safety, independence, and quality of life of Alzheimer’s patients.
+                        <h2 class="text-lg md:text-xl font-semibold mb-3 md:mb-4 uppercase tracking-wider group-hover:text-blue-600 dark:group-hover:text-blue-400 transition text-center md:text-left">Alzheimer Communication Band</h2>
+                        <p class="leading-relaxed text-sm md:text-base text-gray-600 dark:text-gray-400 italic text-center md:text-left">
+                            Wearable safety band designed to enhance the safety and independence of Alzheimer’s patients.
                         </p>
                     </div>
                 </div>
             </a>
 
             <a href="helmet.html" class="block group flex items-start">
-                <span class="text-xl font-light mr-8 mt-1 text-gray-300 dark:text-gray-700">09)</span>
-                <div class="flex-1 flex flex-col md:flex-row items-center md:items-start group-hover:bg-white dark:group-hover:bg-gray-800 transition p-4 rounded-xl shadow-none group-hover:shadow-lg">
-                    <div class="w-40 h-40 bg-white dark:bg-gray-800 flex-shrink-0 rounded-lg overflow-hidden mb-6 md:mb-0 md:mr-10 shadow-lg border-4 border-white dark:border-gray-700">
+                <span class="text-base md:text-xl font-light mr-4 md:mr-8 mt-1 text-gray-300 dark:text-gray-700">09)</span>
+                <div class="flex-1 flex flex-col md:flex-row items-center md:items-start group-hover:bg-white dark:group-hover:bg-gray-800 transition p-2 md:p-4 rounded-xl shadow-none group-hover:shadow-lg">
+                    <div class="w-32 h-32 md:w-40 md:h-40 bg-white dark:bg-gray-800 flex-shrink-0 rounded-lg overflow-hidden mb-6 md:mb-0 md:mr-10 shadow-lg border-4 border-white dark:border-gray-700">
                         <img src="https://raw.githubusercontent.com/rameetsingh142/rameet.github.io/main/nn.png" alt="Smart Helmet" class="w-full h-full object-cover">
                     </div>
                     <div>
-                        <h2 class="text-xl font-semibold mb-4 uppercase tracking-wider group-hover:text-blue-600 dark:group-hover:text-blue-400 transition">Smart Safety Helmet</h2>
-                        <p class="leading-relaxed text-gray-600 dark:text-gray-400 italic">
-                           This project was especially meaningful to me as it was my first hands-on implementation of a hybrid hardware–IoT concept, combining safety, connectivity, and real-world usability. The helmet was designed to enhance cyclist safety and visibility, particularly during night rides and urban commuting. It integrates multiple smart features directly into the helmet without compromising comfort or wearability.
+                        <h2 class="text-lg md:text-xl font-semibold mb-3 md:mb-4 uppercase tracking-wider group-hover:text-blue-600 dark:group-hover:text-blue-400 transition text-center md:text-left">Smart Safety Helmet</h2>
+                        <p class="leading-relaxed text-sm md:text-base text-gray-600 dark:text-gray-400 italic text-center md:text-left">
+                           Hybrid hardware–IoT implementation designed to enhance cyclist safety through visibility and connectivity.
                         </p>
                     </div>
                 </div>
@@ -178,7 +176,7 @@
         </div>
     </main>
 
-    <footer class="py-20 text-center text-xs text-gray-400 uppercase tracking-widest">
+    <footer class="py-12 md:py-20 text-center text-xs text-gray-400 uppercase tracking-widest">
         &copy; 2026 Rameet Singh Sachar
     </footer>
 
@@ -187,7 +185,6 @@
         const themeIcon = document.getElementById('theme-icon');
         const htmlElement = document.documentElement;
 
-        // Set initial icon correctly based on the applied theme
         if (htmlElement.classList.contains('dark')) {
             themeIcon.classList.replace('fa-moon', 'fa-sun');
         }
